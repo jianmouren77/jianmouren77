@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //创建一个Map
+    var map1 = new Map();
+    // console.log(map1)
+    // setting
+    
+        // map1.set("1903831121","张三")
+        map1.set("1903831121","李四")
+    map1.set("1","王五")
+    console.log(map1)
+
+    console.log(map1.get("1"))
+
+    // map1.delete("1903831121")
+
+    // console.log(map1)
+
+    // 这种方法遍历MAP可以直接拿去用，只需要修改map1这个地方
+    for(var [key,value] of map1){
+
+        console.log("这是key:"+key+", 这是value:"+value)
+    }
+
+    if(map1.has("1")){
+        console.log("存在学号为1的学生")
+    }else{
+        console.log("不存在学号为1的学生")
+    }
+
+</script>
+</body>
+</html>
